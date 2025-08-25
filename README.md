@@ -1,6 +1,6 @@
 # A Bash-Based Server Control Daemon
 
-This repository contains the source code for a server control daemon, written in bash. Unlike most server control daemons, it does NOT rely on a web UI even a GUI of any kind. Instead, everything is done via files. SSH is used as the backend to actually communicate with devices.
+This repository contains a server control daemon, written in bash. Unlike most server control daemons, it does NOT rely on a web UI even a GUI of any kind. Instead, everything is done via files. SSH is used as the backend to actually communicate with devices.
 
 ## How does it work?
 
@@ -87,4 +87,6 @@ Mainly just automatically doing tasks on various computers (all of them are Sync
 
 Just `git clone` the repo. There aren't really any "releases" in the normal sense, since it's literally a bash script. You really only need bash and some basic core utilities. You also need doas on your servers you are trying to control (feel free to replace it with sudo if you use that instead).
 
+## Watchdogs???
 
+Those watchdogs are mainly because of the fact that I run this on an old Android TV box, and if you know Android, Android sucks at running custom daemons, so I run these alongside the main daemon to keep Android in check. They are just a tidbit that I put here, but it's not anything special.
